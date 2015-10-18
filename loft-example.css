@@ -1,0 +1,32 @@
+#exit-intent-on-switch, #exit-intent-off-switch, #exit-intent-checker {
+  width: 100%;
+  height: 20px;
+}
+#exit-intent-on-switch {
+  position: absolute;
+  z-index: 10;
+  margin-top: 20px;
+}
+
+#exit-intent-off-switch {
+  position: absolute;
+  z-index: 10;
+}
+
+#exit-intent-checker {
+  position: absolute;
+  z-index: 10;
+  margin-top: 10px;
+}
+
+#chrome_campaign_container_overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+div#bouncex_el_chrome {
+  position: relative !important;
+  width: 531px;
+  margin: auto !important;
+  margin-top: 75px !important;
+}

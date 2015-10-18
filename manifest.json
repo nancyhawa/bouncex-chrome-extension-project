@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "LOFT sample overlay",
+  "description": "This extension adds an overlay when a user demonstrates exit intent from a LOFT products page.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+        "matches": ["http://www.loft.com/dresses/*"],
+        "css": ["loft-example.css"],
+        "js": ["jquery-2.1.4.min.js", "overlay.js", "email-overlay.js"]
+    }
+  ],
+  "web_accessible_resources": ["overlay.html"],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "storage"
+  ]
+}
